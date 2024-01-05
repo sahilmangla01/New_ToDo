@@ -1,0 +1,141 @@
+.title{
+    letter-spacing: 30px;
+    color:white;
+    font-size: 3rem;
+}
+
+.addTask-form{
+    width:35%;
+    margin: 2rem auto ;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2.4rem;
+    border-radius: 14px;
+
+}
+
+input{
+    width:80%;
+    font-size: 1.2rem;
+    border:white;
+
+}
+input[type="text"]:focus{
+    outline:  none;
+}
+.addTask-button{
+    background-color: white;
+    font-size: 2rem;
+    border: none;
+    color: gray;
+    cursor: pointer;
+}
+.list-container{
+    margin: 0 auto;
+    width: 40%;
+    background-color: white;
+    box-shadow: 0px 0px 2px 0px rgb(189, 188, 188);
+    border-radius: 14px;
+    padding-bottom: 1.5rem;
+    max-height: 58vh;
+    
+}
+.list-headings{
+    display: flex;
+    padding: 0.5rem 2.4rem 0;
+    justify-content: space-around;
+    
+}
+.clicked{
+    color: #7360DF;
+    border-bottom:3px solid #7360DF;
+    padding-bottom: 0.5rem;
+}
+.size{
+    font-size: 1rem;
+}
+hr{
+    width:90%;
+    
+}
+.todo-parent{
+
+    overflow-y: scroll;
+    height: 48vh;
+}
+.completed-todos{
+    background-color: #7360DF;
+    color: white;
+}
+.todos{
+    display: flex;
+    width: 85%;
+    margin: 1rem auto;
+    justify-content: space-between;
+    box-shadow: 0px 0px 2px 0px rgb(189, 188, 188);
+    padding: 0px 1rem;
+    border-radius: 4px;
+    
+    
+}
+.todo{
+    text-align: left;
+    width:70%;
+}
+.list-options{
+    display:flex;
+    width: 30%;
+    justify-content: space-between;
+}
+.btn{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.checked-btn{
+    background-color: #7360DF;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+@media only screen and (min-width:250px) and (max-width:500px){
+    .addTask-form{
+        width: 70%;
+    }
+    .list-container{
+        width: 90%;
+        max-height: 60vh;
+        
+    }
+    .todos{
+        width: 80%;
+    }
+    .todo{
+        width: 60%;
+    }
+    .list-options{
+        width: 35%;
+    }
+}
+@media only screen and (min-width:501px) and (max-width:750px){
+    .addTask-form{
+        width: 80%;
+    }
+    .list-container{
+        width: 90%;
+    }
+}
+@media only screen and (min-width:751px) and (max-width:1200px){
+    .addTask-form{
+        width: 80%;
+    }
+    .list-container{
+        width: 90%;
+        max-height: 65vh;
+    }
+}
